@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+//unnamed return value
 func calc() int {
 	result := 0
 	fmt.Println("First calc: ", result)
@@ -19,7 +20,8 @@ func calc() int {
 	return result
 }
 
-func calcilator() (result int) {
+//named return value
+func calculator() (result int) {
 	result = 0
 	fmt.Println("First calculator: ", result)
 
@@ -32,9 +34,12 @@ func calcilator() (result int) {
 
 	result = 5
 	fmt.Println("Last calculator: ", result)
-	return result
+	return
 }
 
 func main() {
-
+	a := calc()
+	fmt.Println("a:", a)
+	b := calculator()
+	fmt.Println("b:", b)
 }

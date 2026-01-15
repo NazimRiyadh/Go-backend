@@ -16,6 +16,8 @@ type product struct {
 }
 
 func get_products_handler(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Access-Control-Allow-Headers", "Content-Type")
+	w.Header().Set("Allow-Control-Allow-Methods", "GET, OPTIONS")
 	w.Header().Set("Content-Type", "application/json") //for json response
 	w.Header().Set("Access-Control-Allow-Origin", "*") //CORS policy
 	if r.Method != "GET" {
@@ -29,6 +31,7 @@ func get_products_handler(w http.ResponseWriter, r *http.Request) {
 
 func add_product_handler(w http.ResponseWriter, r *http.Request) {
 
+	w.Header().Set("Access-Control-Allow-Headers", "Content-Type")
 	w.Header().Set("Allow-Control-Allow-Methods", "POST, OPTIONS")
 	w.Header().Set("Access-Control-Allow-Origin", "*") //CORS policy
 	w.Header().Set("Content-Type", "application/json") //for json response
