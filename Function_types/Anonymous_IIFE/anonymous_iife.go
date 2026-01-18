@@ -10,9 +10,13 @@ var add = func(a, b int) int {
 	return a + b
 }
 
+
+//this is called IIFE(Immediately Invoked Fucntion Expression)
+//this function immediately invoked after the expression
 var sub = func(a, b int) int {
 	return a - b
 }(5, 3)
+
 
 func print() {
 	fmt.Println("Printing Outter sub func value: ", sub)

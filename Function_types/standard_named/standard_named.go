@@ -1,4 +1,4 @@
-package standard_named
+package main
 
 import "fmt"
 

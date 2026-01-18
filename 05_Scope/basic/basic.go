@@ -12,7 +12,7 @@ func add(x int, y int) {
 	fmt.Println(sum)
 }
 
-//used varibale shadowing as multiple variables with same name exist in different scopes
+//used variable shadowing as multiple variables with same name exist in different scopes
 func main() {
 	p := 2
 	q := 4

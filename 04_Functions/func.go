@@ -9,6 +9,7 @@ func add(num1 int, num2 int) {
 	fmt.Println(sum)
 }
 
+//multiple return values
 func dual(num1 int, num2 int) (int, int) {
 	sum := num1 + num2
 	mul := num1 * num2
@@ -21,4 +22,5 @@ func main() {
 	add(a, b)
 	p, q := dual(a, b)
 	fmt.Println("p:", p, "Q:", q)
+
 }
