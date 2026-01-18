@@ -11,6 +11,10 @@ func main() {
 
 	name := "riyadh"
 
+
+	//unicode point rune
+	//here "a" kind of reflects the byte 
+	//here "b" reflects the unicode of the letter
 	for a, b := range name {
 		fmt.Println(a, b)
 	}
