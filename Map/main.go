@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"maps"
+)
 
 func main() {
 	//map creation
@@ -34,4 +37,18 @@ func main() {
 
 	fmt.Println(n["lichi"]) //will return 0 as i cleared the map
 
+	map1 := map[string]string{
+		"name":    "Riyadh",
+		"country": "Bangladesh",
+		"city":    "Dhaka",
+	}
+	map2 := map[string]string{
+		"name":    "Habib",
+		"country": "India",
+		"city":    "Mumbai",
+	}
+
+	// Comparing maps
+	//fmt.Println("Are maps equal?", map1 == map2) -> This will cause a compilation error
+	fmt.Println(maps.Equal(map1, map2)) // Using reflect.DeepEqual to compare maps
 }

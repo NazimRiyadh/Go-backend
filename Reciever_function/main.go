@@ -41,7 +41,7 @@ func main() {
 		email: "Saleka@gmail.com",
 	}
 
-	second := &user{
+	second := user{
 		name:  "Aleka",
 		age:   10,
 		class: 5,
