@@ -35,6 +35,8 @@ func main() {
 
 	fmt.Println(first)
 	first.printDetails()
+
+	//one interface to another interface
 	neww, ok := first.(government)
 	if ok == false {
 		fmt.Println("Interface conversion failed")
